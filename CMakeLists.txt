@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.20)
 project(
     CadexAssignment
-    VERSION 0.1
+    VERSION 1.0
     LANGUAGES CXX
 )
 
@@ -12,7 +12,16 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(Curves)
 
-add_executable(CurvesApp main.cpp)
+add_executable(CurvesApp
+        main.cpp
+        CurveFactory.h
+        CircleFactory.cpp
+        CircleFactory.h
+        EllipseFactory.cpp
+        EllipseFactory.h
+        HelixFactory.cpp
+        HelixFactory.h
+)
 
 target_link_libraries(
         CurvesApp
