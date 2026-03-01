@@ -1,8 +1,8 @@
 # Create library target
 add_library(Curves
-    src/Circle.cpp
-    src/Ellipse.cpp
-    src/Helix.cpp
+        src/Circle.cpp
+        src/Ellipse.cpp
+        src/Helix.cpp
 )
 
 # Create library alias

@@ -8,11 +8,8 @@
 
 // Curves library
 #include <curves>
-
-#include "CurveFactory.h"
-#include "CircleFactory.h"
-#include "EllipseFactory.h"
-#include "HelixFactory.h"
+// Factories
+#include "CurveFactories/Curvefactories.h"
 
 using namespace Curves;
 

@@ -13,14 +13,15 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_subdirectory(Curves)
 
 add_executable(CurvesApp
-        main.cpp
-        CurveFactory.h
-        CircleFactory.cpp
-        CircleFactory.h
-        EllipseFactory.cpp
-        EllipseFactory.h
-        HelixFactory.cpp
-        HelixFactory.h
+        src/main.cpp
+        src/CurveFactories/CurveFactory.h
+        src/CurveFactories/CircleFactory.cpp
+        src/CurveFactories/CircleFactory.h
+        src/CurveFactories/EllipseFactory.cpp
+        src/CurveFactories/EllipseFactory.h
+        src/CurveFactories/HelixFactory.cpp
+        src/CurveFactories/HelixFactory.h
+        src/CurveFactories/Curvefactories.h
 )
 
 target_link_libraries(
